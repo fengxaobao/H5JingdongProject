@@ -1,0 +1,248 @@
+.jd_layout {
+
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/*顶部栏*/
+.jd_search {
+    z-index: 30;
+    max-width: 640px;
+    background: rgba(233,25,34,0);
+    position: fixed;
+    width: 100%;
+    height: 40px;
+}
+
+.jd_login {
+    display: block;
+    color: #ffffff;
+    size: 16px;
+    right: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0;
+
+}
+
+.jd_logo {
+    display: block;
+    position: absolute;
+    background: url("../image/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: 0px -108px;
+    width: 56px;
+    height: 32px;
+    left: 10px;
+    top: 5px;
+}
+
+.jd_search_form {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    height: 100%;
+    padding-left: 76px;
+    padding-right: 80px;
+}
+
+.search_box {
+    margin-top: 5px;
+    border: 0px;
+    border-radius: 30px;
+    outline: transparent;
+    line-height: 40px;
+    padding-left: 25px;
+    width: 100%;
+    height: 60%;
+    color: blue;
+}
+
+.jd_search_form::before {
+    content: "";
+    height: 23px;
+    width: 24px;
+    position: absolute;
+    background: url("../image/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -60px -108px;
+    left: 80px;
+    top: 7px;
+}
+
+/*banner*/
+
+.banner_ul {
+    position: relative;
+    width: 400%;
+}
+
+.banner_ul > li {
+    float: left;
+    width: 25%;
+}
+
+.banner_ul > li img {
+    width: 100%;
+}
+
+.jd_banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jd_bannerIndicator {
+    width: 128px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+
+.jd_bannerIndicator > li {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 10px;
+}
+
+.jd_bannerIndicator :first-child {
+    margin-left: 0px;
+}
+
+.jd_bannerIndicator > li.active {
+    background-color: #fff;
+}
+
+/*导航*/
+.jd_nav {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.jd_nav > ul {
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+    width: 25%;
+}
+
+.jd_nav li img {
+    width: 50px;
+}
+
+.jd_nav li p {
+    line-height: 25px;
+}
+
+/*产品*/
+.jd_product_item {
+    width: 100%;
+    /*box-shadow: 1px 1px 1px #666;*/
+}
+
+.jd_product_item1 {
+
+    height: 170px;
+}
+
+.jd_product_item2 {
+    height: 230px;
+
+}
+
+.jd_product_item_tips {
+    margin-top: 20px;
+    height: 40px;
+    border-top: 10px solid aliceblue;
+}
+.product_item2_context{
+    box-sizing: border-box;
+
+}
+.product_item2_tips{
+    width: 100%;
+    border-top: 10px solid rgba(192, 177, 151, 0.25);;
+    border-bottom: 1px solid #f3e0bf;;
+    height: 40px;
+    line-height: 30px;
+
+}
+.product_item2_tips > div{
+    font-weight: bold;
+    margin-left: 15px;
+    padding-left: 10px;
+    color: blue;
+}
+.product_item2_tips > div:before{
+    margin-right: 10px;
+    content: '|';
+    color: red;
+
+}
+.product_item2_context > a >img{
+    width: 50%;
+    float: left;
+}
+.item1_left_icon{
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 16px;
+    height: 20px;
+    background: url("../image/seckill-icon.png");
+    background-size: 16px 20px ;
+    padding-left: 15px;
+
+}
+.item1_left_text{
+    padding-top: 5px;
+    color: #e92322;
+    size: 14px;
+
+}
+.item1_left{
+    padding-left: 15px;
+    float: left;
+}
+.item1_right{
+
+}
+.item1_right_text{
+    size: 14px;
+    color: #999999;
+    padding-right: 15px;
+    float: right;
+}
+.item1_left_time{
+    size: 14px;
+    color: black;
+    padding-left: 15px;
+    float: right;
+}
+.product_item1_context{
+    width: 100%;
+}
+
+.product_item>a>img{
+    width: 70px;
+    height:70px;
+
+}
+.product_item{
+    align-items:center;
+    text-align: center;
+    width: 33%;
+    float: left;
+
+}

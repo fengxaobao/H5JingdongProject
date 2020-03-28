@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式</title>
+    <style>
+        .context{
+            width: 100%;
+            height: 100px;
+            background: red;
+        }
+        @media screen and (max-width: 1280px) {
+            .context{
+                background: black;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .context{
+                background: saddlebrown;
+            }
+        }
+    </style>
+</head>
+<body>
+ <div class="context"></div>
+</body>
+</html>
